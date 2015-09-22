@@ -1,0 +1,897 @@
+/**********************************
+Project Final for themilleniumwi by Steven Price &copy 2015
+***********************************/
+
+/**********************************
+GENERAL
+***********************************/
+
+/* logo text */
+h1, h2 {
+  color: #1d1b23;
+}
+
+/* links */
+a {
+  color: #595959;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    color: #595959;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'Changa One', 'Open Sans', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.7em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+/**********************************
+FORMS
+***********************************/
+
+.form-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+form label {
+    color: #000;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+form #submit {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-left: 0px;
+}
+
+form #submit:active {
+    box-shadow: none;
+}
+
+#thanksPage {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/**********************************
+HEADING
+***********************************/
+header {
+    background-image: url("../img/TheMilleniumChairs.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 0 auto; 
+    padding: 0;
+    width: 100%;
+}
+
+.logo-wrapper {
+  padding: 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#logo img {
+  max-width: 25%;
+  padding: 0px;
+  margin-top: 1.5%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 1.5%;
+}
+
+.enter {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #dac776;
+    font-size: 1rem;
+    line-height: 5.98em;
+    margin-top: -4%;
+}
+
+.enter:hover,
+.enter:focus,
+.enter:active {
+    color: #fff;
+}
+
+/**********************************
+NAVIGATION
+***********************************/
+
+/* selected nav link */
+
+#MobileNav {
+    display: none;
+}
+
+.scroll.-on {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+#MainNav,
+#MobileNav {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#MainNav a,
+#MainNav a:visited,
+#MobileNav a,
+#MobileNav:visited {
+    color: #999;
+    margin: 0 .25rem;
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    line-height: 2rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: .5em 1em;
+}
+
+#MainNav,
+#MobileNav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#MainNav a:nth-child(n+2):before {
+    float: left;
+    content: "//";
+    display: inline-block;
+    font-size: 1.5em;
+    color: #dac776;
+    font-weight: normal;
+    padding: .5rem 2rem .5rem 0;
+    margin: -10 0;
+}
+
+#MainNav a.selected,
+#MobileNav ul a.selected {
+    color: #fff;
+}
+
+#MainNav a:hover,
+#MobileNav ul a:hover {
+    color: #fff;
+}
+
+/**********************************
+Author Nav
+***********************************/
+
+#MemberProfileNav {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#MemberProfileNav a{
+    color: #c4a51b;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#MemberProfileNav a:nth-child(n+2):before {
+    content: "//";
+}
+
+#BandNav .page-title {
+    margin: 0 auto;
+}
+
+#BandNav {
+    width: 100%;
+    padding-top: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/**********************************
+MAIN CONTENT
+***********************************/
+
+.content {
+    width: 90%;
+    margin: 3rem auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.content-video {
+    margin: 3rem auto;
+    width: 95%;
+}
+
+.wrapper {
+        width: 100%;
+        margin: 0 auto 2rem;
+        height: auto;
+        overflow: auto;
+    }
+
+#aboutHeader {
+    width: 100%;
+    padding: 2em 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+section.bio-off {
+    display: none;
+}
+
+.bio div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#profilePhoto {
+    float: left;
+    display: block;
+    width: 45%;
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 1em;
+    border: 1px solid #000;
+}
+
+#twitter-wrapper {
+    float: left;
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-bottom: 2em;
+}
+
+.store-wrapper {
+    width: 100%;
+    
+}
+
+#music-title,
+#title-icons {
+    margin-bottom: .2rem;
+}
+
+.music-icons,
+.title-icons {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 3rem;
+}
+
+.music-icons img {
+    height: 1.5em;
+}
+
+.title-icons img{
+    height: 1.5em;
+}
+
+.music-player {
+    width: 95%;
+    margin: 0 auto 2rem;
+}
+
+.page-title {
+    width: 100%;
+    font-size: 1rem;
+    color: #000;
+    padding: 1rem;
+    margin: 0 auto 5rem;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.wrapper .page-title {
+    text-transform: uppercase;
+}
+
+#youtube-logo {
+    width: 100%;
+    display: block;
+    min-height: 25px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+}
+
+#youtube-logo img{
+    float: left;
+    height: 2.2rem;
+    min-height: 25px;
+}
+
+#youtube-logo h2 {
+    float: left;
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+.blog-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.post-title {
+    text-align: left;
+    text-decoration: underline;
+    font-size: 1.5em;
+    color: #595959;
+}
+
+.post-date {
+    text-align: left;
+    text-decoration: underline;
+    font-size: .8em;
+    font-style: italic;
+}
+
+.PostWrapper {
+    width: 85%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#ContactWrapper {
+    float: left;
+    text-align: left;
+    margin: 0 auto 1rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+/**********************************
+SIDEBAR
+***********************************/
+
+.sidebar {
+    width: 100%;
+    margin: 3rem auto 1rem;
+}
+
+.call-to-action {
+    float: left;
+    width: 40%;
+    margin: 0 auto 1rem;
+}
+
+.call-to-action img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.call-to-action .page-title {
+    margin: 1rem auto 0;
+}
+
+.tour-dates {
+    float: right;
+    width: 40%;
+}
+
+.sidebar a {
+    color: #c4a51b;
+}
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+    background-color: #000;
+    color: #ddd;
+    font-size: 0.75em;
+    text-align: left;
+    width: 100%;
+    clear: both;
+    padding: .1rem 0;
+    margin: 0 auto;
+}
+
+.social-wrapper {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+.social-wrapper img {
+    height: 2rem;
+    margin: 0 auto;
+}
+
+.social-wrapper a {
+    display: inline-block;
+}
+
+.social-wrapper a:hover,
+.social-wrapper a:focus {
+    opacity: 0.6;
+    z-index:900;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+    color: #c4a51b;
+}
+
+.tothetop:hover { 
+    cursor: pointer; 
+}
+
+.footer-credits {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 0 auto 1rem;
+    padding: 0 3rem 0;
+    overflow: hidden;
+    border-top: 1px solid #999;
+}
+
+.credits-left {
+    display: inline-block;
+    float: left;
+}
+
+.credits-right {
+    display: inline-block;
+    float: right;
+}
+
+.footer-credits a:hover,
+.footer-credits a:focus {
+    opacity: 1;
+}
+
+.credits-right a:visited {
+    color: #fff;
+}
+
+.credits-right a:hover,
+.credits-right a:focus {
+    color: #c4a51b;
+}
+
+.credits-right-off {
+    display: none;
+}
+
+/**********************************
+PAGE: LANDING
+***********************************/
+
+/**GENERAL----------------------*/
+
+body.landing {
+    max-height: 100%;
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+    z-index:0;
+}
+
+/**HEADER-----------------------*/
+
+header.landing {
+    top: 0;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    background-color: none;
+    background-image: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#logolanding img {
+    display: block;
+    width: 5em;
+    padding: 1%;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+/**NAV-------------------------*/
+
+nav.landing {
+    display: none !important;
+}
+
+/**CONTENT---------------------*/
+
+.content-landing {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 10;
+}
+
+.wrapper .embed-container {
+    margin: 0 auto 2rem;
+}
+
+.embed-container { 
+    margin: 0;
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+}
+
+/**FOOTER-----------------------*/
+
+footer.landing {
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+footer.landing a {
+    color: #c4a51b;
+}
+
+.landing .social-wrapper {
+    background-color: rgba(255,255,255, 0.1);
+}
+
+.landing .credits-left {
+    display: block;
+    float: none;
+    text-align: center;
+    color: #000;
+}
+
+.landing .footer-credits {
+    margin: 0 auto;
+    border: none;
+}
+
+/**********************************
+@MEDIA SCREEN
+***********************************/
+
+
+@media (max-width: 800px) {
+    
+    /**HEADER-----------------------*/
+    
+    header {
+        background-position: top;
+    }
+    
+    /**NAV MAIN---------------------*/
+    
+    #MainNav {
+        display: none;
+    }
+    
+    /**NAV MOBILE-------------------*/
+    
+    #MobileNav {
+        display: block;
+        overflow: hidden;
+    }
+    
+    #MobileNav ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #MobileNav ul li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+    }
+    
+    #MobileNav ul li a:link,
+    #MobileNav ul li a:visited {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+    
+    #MobileNav ul li ul {
+        display: none;
+        width: 100%;
+    }
+    
+    #MobileNav ul li:hover ul,
+    #MobileNav ul li:focus ul {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid #000;
+    }
+    
+    #MobileNav ul li ul li {
+        clear: left;
+        width: 100%;
+    }
+    
+    #MobileNav ul li:hover ul li a,
+    #MobileNav ul li:focus ul li a {
+        width: 100%;
+        margin: 0;
+        color: rgb(153, 153, 153);
+        border: 1px solid #000;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    #MobileNav ul li:hover ul li a:hover,
+    #MobileNav ul li:hover ul li a:active,
+    #MobileNav ul li:hover ul li a:focus {
+        color: rgb(255, 255, 255);
+        background-color: rgba(153, 153, 153, 0.4);
+    }
+    
+    /**HAMBURGER ICON---------------*/
+    
+    #hamburger {
+        position: relative;
+        margin: 0 .25rem;
+        display: inline-block;
+        list-style: none;
+        text-decoration: none;
+        line-height: 2rem;
+        font-weight: bold;
+        font-size: 1.25rem;
+        padding: .5em 1em;
+    }
+    
+    #hamburger:focus {
+        color: #fff;
+    }
+    
+    #MobileNav ul #hamburger #patty:before {
+        content: "";
+        font-size: 1.5em;
+        position: absolute;
+        margin-left: -1.25em;
+        margin-top: .2em;
+        width: .95em; /* 12px/16px */
+        height: .125em;
+        border-top: .375em double #999; /* 6px/16px */
+        border-bottom: .155em solid #999; /* 2px/16px */
+    }
+}
+
+@media (min-width: 750px) {
+    
+    /**VIDEO------------------------*/
+    
+    .content-video {
+        margin: 3rem auto;
+        position: relative;
+        width: 95%;
+        overflow: hidden;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1050px) {
+    
+    /**MAIN CONTENT-----------------*/
+    
+    .content {
+        width: 90%;
+    }
+    
+    .wrapper {
+        float: left;
+        width: 60%;
+        margin-right: 5%;
+    }
+    
+    /**SIDEBAR----------------------*/
+    
+    .sidebar {
+        float: right;
+        width: 25%;
+        margin: 0 auto;
+    }  
+    
+    .call-to-action {
+        float: none;
+        width: 100%;
+    }
+    
+    .tour-dates {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    
+    /**AUTHOR NAV-------------------*/
+    
+    #MemberProfileNav {
+        width: 100%;
+    }
+    
+    #MemberProfileNav a{
+        display: block;
+        width: 100%;
+        float: left;
+    }
+    
+    #MemberProfileNav a:before {
+        content: "//";
+        padding-right: .35rem;
+    }
+    
+}
+
+@media (max-width: 750px) {
+    
+    /**SIDEBAR----------------------*/
+    
+    .sidebar {
+        float: none;
+        width: 90%;
+    }
+    
+    .call-to-action {
+        float: none;
+        width: 100%;
+        margin: 0 auto 1rem;
+    }
+
+    .tour-dates {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    /**HEADER LANDING-----------------*/
+    
+    header.landing {
+        position: relative;
+        background-color: #000;
+    }
+    
+    #logolanding img {
+        display: inline-block;
+        width: 3em;
+        padding: 1%;
+        margin-left: 1%;
+        z-index: 1000;
+    }
+
+    .enter {
+        line-height: 3.1em;
+    }
+    
+    /**NAV LANDING--------------------*/
+    
+    nav.landing {
+        display: none;
+    }
+    
+    /**MAIN CONTENT-------------------*/
+    
+    .content-landing {
+        position: relative;
+    }
+    
+    #profilePhoto {
+        float: none;
+        width: 100%;
+        margin: 0 auto 1rem;
+    }
+    
+    #twitter-wrapper {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    section.video {
+        top: 0;
+        position: relative;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
